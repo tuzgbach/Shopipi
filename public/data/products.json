@@ -11,12 +11,12 @@
     "ratings": 24089,
     "price": 11.0,
     "oldPrice": 22.0,
-    "link": "",
+    "link": "shop now",
     "badge": "seller"
   },
   "1": {
     "id": 1,
-    "title": "Guinness World Records 2023",
+    "title": "Guinness World",
     "image": "../images/product_1.jpg",
     "image_small": "../images/product_1_small.jpg",
     "attribute": "Hardcover",
@@ -27,11 +27,12 @@
     "price": 8.5,
     "oldPrice": 22.0,
     "quantity": 0,
+    "link": "shop now",
     "badge": "choice"
   },
   "2": {
     "id": 2,
-    "title": "One: Simple One-Pan Wonders",
+    "title": "One: Simple",
     "image": "../images/product_2.jpg",
     "image_small": "../images/product_2_small.jpg",
     "attribute": "Paperback",
@@ -41,11 +42,12 @@
     "ratings": 2993,
     "price": 13.0,
     "oldPrice": 23.0,
+    "link": "shop now",
     "badge": "choice"
   },
   "3": {
     "id": 3,
-    "title": "The Bullet That Missed: (The Thursday Murder Club 3)",
+    "title": "The Bullet",
     "image": "../images/product_3.jpg",
     "image_small": "../images/product_3_small.jpg",
     "attribute": "Paperback",
@@ -54,11 +56,12 @@
     "avgRating": 5,
     "ratings": 29283,
     "price": 10.0,
+    "link": "shop now",
     "oldPrice": 20.0
   },
   "4": {
     "id": 4,
-    "title": "Interesting Facts For Curious Minds",
+    "title": "Interesting Facts",
     "image": "../images/product_4.jpg",
     "image_small": "../images/product_4_small.jpg",
     "attribute": "Hardcover",
@@ -68,11 +71,12 @@
     "ratings": 885,
     "price": 10.9,
     "oldPrice": 13.99,
+    "link": "shop now",
     "badge": "limited"
   },
   "5": {
     "id": 5,
-    "title": "It Start with Us",
+    "title": "It Start",
     "image": "../images/product_5.jpg",
     "image_small": "../images/product_5_small.jpg",
     "attribute": "Paperback",
@@ -81,6 +85,7 @@
     "avgRating": 4,
     "ratings": 44402,
     "price": 7.0,
+    "link": "shop now",
     "oldPrice": 14.99,
     "badge": "choice"
   },
@@ -100,7 +105,7 @@
   },
   "7": {
     "id": 7,
-    "title": "Lessons in Chemistry",
+    "title": "Lessons",
     "image": "../images/product_7.jpg",
     "image_small": "../images/product_7_small.jpg",
     "attribute": "Hardcover",

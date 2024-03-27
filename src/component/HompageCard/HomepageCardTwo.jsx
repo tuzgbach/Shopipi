@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-const HomePageCard = () => {
+const HomepageCardTwo = ({ link }) => {
   const [products, setProducts] = useState([]);
-  const [limit, setLimit] = useState(4);
+  const [limit, setLimit] = useState(1);
 
   useEffect(() => {
     fetch("/data/products.json")
@@ -16,25 +17,23 @@ const HomePageCard = () => {
   }, [limit]);
 
   return (
-    <div className="h-[420px] bg-white m-4 z-30 rounded-lg grid grid-cols-2 grid-rows-2">
+    <div className="h-[440px] bg-white m-5 z-30">
       {products.map((product, index) => (
         <div
           key={index}
-          className="mb-6 xl:mb-10 relative overflow-hidden"
-          style={{ margin: "0.5rem" }}
+          className=" mb-1 xl:mb-10 relative overflow-hidden"
+          style={{ margin: "1rem" }}
         >
           <img
-            className="object-cover w-full h-48 mb-5 rounded-lg transition duration-300 transform hover:scale-105" // Đặt kích thước cho hình ảnh
+            className="object-cover w-full h-96 transform hover:scale-105 transition-transform duration-500 ease-in-out"
             src={product.image}
             alt="HomeCard"
           />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 bg-black bg-opacity-50 text-white text-center">
-            <span className="text-sm xl:text-lg">{product.link}</span>
-          </div>
         </div>
       ))}
+      <div className="text-xs xl:text-sm text-blue-500 ml-2">{link}</div>
     </div>
   );
 };
 
-export default HomePageCard;
+export default HomepageCardTwo;

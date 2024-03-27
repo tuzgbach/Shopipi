@@ -1,6 +1,8 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+
 import "swiper/css";
+import "swiper/css/navigation";
 
 const Carousel = () => {
   return (
@@ -9,7 +11,7 @@ const Carousel = () => {
         loop={true}
         spaceBetween={0}
         navigation={true}
-        // modules={[Navigation, Autoplay]}
+        modules={[Navigation, Autoplay]}
         autoplay={{
           delay: 4500,
         }}
