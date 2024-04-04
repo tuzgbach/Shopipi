@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomePageCardTree = ({ link }) => {
   const [products, setProducts] = useState([]);
-  const [limit, setLimit] = useState(6);
+  const [limit, setLimit] = useState(4);
 
   useEffect(() => {
     fetch("/data/products.json")
@@ -16,24 +16,25 @@ const HomePageCardTree = ({ link }) => {
   }, [limit]);
 
   return (
-    <div className="h-[440px] bg-white m-auto z-30 grid grid-cols-4">
+    <div className="h-[440px] bg-white m-3 z-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-lg">
       {products.map((product, index) => (
         <div
           key={index}
-          className="mb-1 xl:mb-10 relative overflow-hidden"
-          style={{ margin: "0.5rem" }}
+          className={`mb-1 xl:mb-10 relative overflow-hidden ${
+            index === 0 ? "col-span-full md:col-span-2 lg:col-span-4" : ""
+          }`}
+          style={{ margin: "10px" }}
         >
-          <div className="text-sm xl:text-sm font-light mb-1">
+          <div className="text-sm xl:text-sm font-light mb-1 inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
             {product.title}
           </div>
           <img
-            className="object-cover w-full h-auto transform hover:scale-105 transition-transform duration-500 ease-in-out"
+            className="object-cover w-full h-auto rounded-md"
             src={product.image}
             alt="HomeCard"
           />
         </div>
       ))}
-      <div className="text-sm xl:text-sm text-blue-500 mt-52 mb-3">{link}</div>
     </div>
   );
 };

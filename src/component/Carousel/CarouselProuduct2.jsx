@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 
-const CarouselProduct = () => {
+const CarouselProuduct2 = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch("/data/products.json")
@@ -18,14 +18,15 @@ const CarouselProduct = () => {
       })
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
+
   return (
     <div className="bg-white m-3 p-3">
-      <div className="text-2xl font-semibold p-3">Hàng được mua nhiều</div>
+      <div className="text-2xl font-semibold p-3">Hàng được xem nhiều nhất</div>
       <Swiper
         slidesPerView={7}
         spaceBetween={10}
         navigation={true}
-        Scrollbar={{ draggable: true }}
+        scrollbar={{ draggable: true }} // add scrollbar, cho phép kéo thanh scrollbar
         modules={[Navigation, Scrollbar]}
       >
         {products.map((product) => (
@@ -39,6 +40,20 @@ const CarouselProduct = () => {
                 src={product.image}
                 alt="HomeCard"
               />
+              <div className="mt-2 flex justify-center items-center w-full gap-1">
+                <span className="mt-1 bg-red-500 text-white rounded-md">
+                  {product.discount}
+                </span>
+                <span className="mt-1 text-1sm bg-yellow-300 rounded-md">
+                  {product.badge}
+                </span>
+              </div>
+              <div className="block flex mt-2">
+                <span className="">{product.price.toLocaleString()} đ</span>
+                <span className="line-through">
+                  {product.oldPrice.toLocaleString()} đ
+                </span>
+              </div>
               <div className="mt-2 flex justify-center items-center w-full mb-5">
                 <span className="inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
                   {product.title}
@@ -52,4 +67,4 @@ const CarouselProduct = () => {
   );
 };
 
-export default CarouselProduct;
+export default CarouselProuduct2;

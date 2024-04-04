@@ -3,11 +3,13 @@ import React, { useEffect, useState } from "react";
 import HomePageCardOne from "./HompageCard/HomePageCardOne";
 import HomepageCardTwo from "./HompageCard/HomepageCardTwo";
 import HomePageCardTree from "./HompageCard/HomePageCardTree";
-import Signin from "./Button/Signin";
 import Footer from "./Footer/Footer";
 import CarouselProduct from "./Carousel/CarouselProduct";
 import CarouselCategory from "./Carousel/CarouselCategory";
 import Carousel from "./Carousel/Carousel";
+import CarouselProuduct2 from "./Carousel/CarouselProuduct2";
+import Button from "./Button/Button";
+import Signin from "./Button/Signin";
 
 const Homepage = () => {
   const [products, setProducts] = useState({
@@ -16,6 +18,7 @@ const Homepage = () => {
     products3: [],
   });
   const [limits, setLimits] = useState({ limit1: 1, limit2: 1, limit3: 1 });
+  const [signin, setSignin] = useState(false);
 
   useEffect(() => {
     fetch("/data/products.json")
@@ -39,7 +42,7 @@ const Homepage = () => {
     <div className="bg-shopipi-background">
       <div className="min-[1000px] max-[1500px] mr-[6rem] ml-[6rem]">
         <Carousel />
-        <div className="grid grid-cols-3 xl:grid-cols-4 -mt-80">
+        <div className="grid grid-cols-3 xl:grid-cols-4 -mt-80 ">
           {products.products1.map((product) =>
             renderProductCard(product, HomePageCardOne)
           )}
@@ -65,7 +68,7 @@ const Homepage = () => {
           )}
         </div>
         <CarouselProduct />
-        <CarouselProduct />
+        <CarouselProuduct2 />
         <CarouselCategory />
         <div className="grid grid-cols-2 xl:grid-cols-3">
           {products.products2.map((product) =>
@@ -79,9 +82,11 @@ const Homepage = () => {
           )}
         </div>
         <CarouselProduct />
-        <Signin />
-        <Footer />
+        <Button>
+          <Signin />
+        </Button>
       </div>
+      <Footer />
     </div>
   );
 };

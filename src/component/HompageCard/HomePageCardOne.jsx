@@ -18,18 +18,18 @@ const HomePageCardOne = ({ link }) => {
   }, [limit]);
 
   return (
-    <div className="h-[440px] bg-white m-5 z-30 grid grid-cols-2 grid-rows-2">
+    <div className="h-[440px] bg-white m-3 z-30 grid grid-cols-2 grid-rows-2 rounded-lg">
       {products.map((product, index) => (
         <div
           key={index}
           className="mb-6 xl:mb-10 relative overflow-hidden"
           style={{ margin: "1rem" }}
         >
-          <div className="text-sm xl:text-sm font-light mb-1">
+          <div className="text-sm xl:text-sm font-light mb-1 inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
             {product.title}
           </div>
           <img
-            className="object-cover h-40 w-full transform hover:scale-105 transition-transform duration-500 ease-in-out"
+            className="object-cover h-30 w-full transform hover:scale-105 transition-transform duration-500 ease-in-out rounded-md"
             src={product.image}
             alt="HomeCard"
           />

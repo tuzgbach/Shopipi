@@ -17,15 +17,18 @@ const HomepageCardTwo = ({ link }) => {
   }, [limit]);
 
   return (
-    <div className="h-[440px] bg-white m-5 z-30">
+    <div className="h-[440px] bg-white m-3 z-30 rounded-lg">
       {products.map((product, index) => (
         <div
           key={index}
           className=" mb-1 xl:mb-10 relative overflow-hidden"
           style={{ margin: "1rem" }}
         >
+          <div className="text-sm xl:text-sm font-light inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
+            {product.title}
+          </div>
           <img
-            className="object-cover w-full h-96 transform hover:scale-105 transition-transform duration-500 ease-in-out"
+            className="object-cover w-full h-[22rem] transition-transform duration-500 ease-in-out rounded-md"
             src={product.image}
             alt="HomeCard"
           />

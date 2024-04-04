@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        "1sm": "13px",
+      },
       colors: {
         shopipi: {
           background: "#EAEDED",

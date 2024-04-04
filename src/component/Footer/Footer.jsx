@@ -1,48 +1,72 @@
 import React from "react";
+import "../Footer/footer.css";
+import Footer2 from "./Footer2";
 
 const Footer = () => {
   return (
-    <>
-      <div className="bg-gray-900 text-white flex justify-center items-center h-16 p-2">
-        <p>
-          <b>Disclaimer:</b> This Amazon clone project is a mere simulation and
-          is not affiliated with Amazon in any way.
-        </p>
-      </div>
-      <div className="bg-gray-200">
-        <div className="flex justify-around items-center pt-12 pb-12 text-gray-600">
-          <div className="cursor-pointer flex flex-col text-left">
-            <p className="font-semibold text-black">Get to Know Us</p>
-            <p>Make Money with Us</p>
-            <p>Amazon Payment</p>
-            <p>Let Us Help You</p>
-          </div>
-          <div className="cursor-pointer flex flex-col text-left">
-            <p className="font-semibold text-black">About Amazon</p>
-            <p>Sell products on Amazon</p>
-            <p>Amazon Business Card</p>
-            <p>Amazon and COVID-19</p>
-          </div>
-          <div className="cursor-pointer flex flex-col text-left">
-            <p className="font-semibold text-black">Connect with Us</p>
-            <p>Sell apps on Amazon</p>
-            <p>Shop with Points</p>
-            <p>Shipping Rates & Policies</p>
-          </div>
-          <div className="cursor-pointer flex flex-col text-left">
-            <p className="font-semibold text-black">Amazon Cares</p>
-            <p>Become an Affiliate</p>
-            <p>Reload Your Balance</p>
-            <p>Returns & Replacements</p>
-          </div>
+    <div className="footer">
+      <div className="footer-content m-[3rem]">
+        <div className="footer-section">
+          <h3>Get to Know Us</h3>
+          <ul>
+            <li>Make Money with Us</li>
+            <li>Amazon Payment</li>
+            <li>Let Us Help You</li>
+            <li>Amazon Payment</li>
+            <li>Let Us Help You</li>
+            <li>Amazon Payment</li>
+            <li>Let Us Help You</li>
+          </ul>
         </div>
-        <div className="flex justify-center items-center w-full text-gray-600 relative pb-8 pt-8">
-          <div className="flex relative -bottom-2 ml-4 items-center">
-            <p>&copy; 2023 | Developed by TungBach</p>
-          </div>
+        <div className="footer-section">
+          <h3>CÔNG TY TNHH CÔNG NGHỆ VÀ THƯƠNG MẠI TTS</h3>
+          <ul>
+            <li>
+              Địa chỉ ĐKKD: Tầng 1, Toà nhà số 109-111, Đường 08, Khu dân cư
+              Trung Sơn, Xã Bình Hưng, Huyện Bình Chánh, Thành phố Hồ Chí Minh,
+              Việt Nam
+            </li>
+            <li>
+              Kho Tân Phú: 284/11 Lũy Bán Bích, Phường Hòa Thạnh, Quận Tân Phú,
+              Thành phố Hồ Chí Minh, Việt Nam
+            </li>
+            <li>Giấy chứng nhận Đăng ký Kinh doanh số </li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3>Thông tin</h3>
+          <ul>
+            <li>Email: info@foodmap.asia</li>
+            <li>Hotline: 02877702614 (8h00 - 18h00)</li>
+            <li>
+              <a href="">
+                Điều khoản và điều kiện sử dụng <b>0314592854</b> " do Sở Kế
+                hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 24/08/2017"
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3>Hỗ trợ</h3>
+          <ul>
+            <li>Phương thức thanh toán</li>
+            <li>Vận chuyển và giao nhận</li>
+            <li>Chính sách đổi trả và hoàn tiền</li>
+            <li>Liên hệ</li>
+            <li>Let Us Help You</li>
+            <li>Amazon Payment</li>
+            <li>Let Us Help You</li>
+          </ul>
         </div>
       </div>
-    </>
+      <div className="mt-3 bg-black p-[5rem]">
+        <Footer2 />
+      </div>
+      <hr />
+      <div className="footer-bottom">
+        <p>&copy; 2023 | Developed by TungBach</p>
+      </div>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 {
   "0": {
     "id": 0,
-    "title": "No Plan B",
+    "title": "Chuối Phủ Chocolate - Đặc Sản Ngon Lành",
     "image": "../images/product_0.jpg",
     "image_small": "../images/product_0_small.jpg",
     "attribute": "Paperback",
@@ -9,45 +9,48 @@
     "brand": "Lee Child",
     "avgRating": 4,
     "ratings": 24089,
-    "price": 11.0,
-    "oldPrice": 22.0,
+    "price": 150000,
+    "oldPrice": 200000,
     "link": "shop now",
-    "badge": "seller"
+    "badge": "Deal có giới hạn",
+    "discount": "50% off"
   },
   "1": {
     "id": 1,
-    "title": "Guinness World",
-    "image": "../images/product_1.jpg",
+    "title": "Mít Ruột Đỏ Indo Thơm, Ngọt (Tách Múi) - Foodmap Fruits",
+    "image": "../images/product_6.jpg",
     "image_small": "../images/product_1_small.jpg",
     "attribute": "Hardcover",
     "brand": "Guinness World Records",
     "description": "The 2023 edition takes readers on a journey that's out of this world! ",
     "avgRating": 5,
     "ratings": 929,
-    "price": 8.5,
-    "oldPrice": 22.0,
+    "price": 850000,
+    "oldPrice": 2200000,
     "quantity": 0,
     "link": "shop now",
-    "badge": "choice"
+    "badge": "Deal có giới hạn",
+    "discount": "50% off"
   },
   "2": {
     "id": 2,
-    "title": "One: Simple",
-    "image": "../images/product_2.jpg",
+    "title": "Dừa Sọ Tươi Ngon - Size M (350 - 450 gr) - Trái - FOODMAP Fruits",
+    "image": "../images/product_5.jpg",
     "image_small": "../images/product_2_small.jpg",
     "attribute": "Paperback",
     "brand": "Jamie Oliver",
     "description": "Give them the simplest cookbook ever this Christmas . . . Jamie's back to basics with over 120 simple, delicious, ONE pan recipes",
     "avgRating": 4,
     "ratings": 2993,
-    "price": 13.0,
-    "oldPrice": 23.0,
+    "price": 130000,
+    "oldPrice": 230000,
     "link": "shop now",
-    "badge": "choice"
+    "badge": "Deal có giới hạn",
+    "discount": "50% off"
   },
   "3": {
     "id": 3,
-    "title": "The Bullet",
+    "title": "Dừa Sọ Tươi Ngon - Size L (450gr UP) - Trái - FOODMAP Fruits",
     "image": "../images/product_3.jpg",
     "image_small": "../images/product_3_small.jpg",
     "attribute": "Paperback",
@@ -55,13 +58,15 @@
     "brand": "Richard Osman",
     "avgRating": 5,
     "ratings": 29283,
-    "price": 10.0,
+    "price": 100000,
     "link": "shop now",
-    "oldPrice": 20.0
+    "oldPrice": 200000,
+    "badge": "Deal có giới hạn",
+    "discount": "50% off"
   },
   "4": {
     "id": 4,
-    "title": "Interesting Facts",
+    "title": "Táo Xanh Mỹ - Foodmap Fruits",
     "image": "../images/product_4.jpg",
     "image_small": "../images/product_4_small.jpg",
     "attribute": "Hardcover",
@@ -69,14 +74,15 @@
     "brand": "Jordan Moore",
     "avgRating": 4,
     "ratings": 885,
-    "price": 10.9,
-    "oldPrice": 13.99,
+    "price": 120000,
+    "oldPrice": 139900,
     "link": "shop now",
-    "badge": "limited"
+    "badge": "Deal có giới hạn",
+    "discount": "50% off"
   },
   "5": {
     "id": 5,
-    "title": "It Start",
+    "title": "[MUA 2 TẶNG 1] Đường Thốt Nốt Truyền Thống An Giang Nguyên Chất 100% - Đặc Sản Ngon Lành",
     "image": "../images/product_5.jpg",
     "image_small": "../images/product_5_small.jpg",
     "attribute": "Paperback",
@@ -84,14 +90,15 @@
     "brand": "Colleen Hoover",
     "avgRating": 4,
     "ratings": 44402,
-    "price": 7.0,
+    "price": 700000,
     "link": "shop now",
-    "oldPrice": 14.99,
-    "badge": "choice"
+    "oldPrice": 149900,
+    "badge": "Deal có giới hạn",
+    "discount": "50% off"
   },
   "6": {
     "id": 6,
-    "title": "SPACEBOY",
+    "title": "Đường Dừa Nước - VIETNIPA",
     "image": "../images/product_6.jpg",
     "image_small": "../images/product_6_small.jpg",
     "attribute": "Paperback",
@@ -99,9 +106,10 @@
     "brand": "David Walliams",
     "avgRating": 5,
     "ratings": 877,
-    "price": 7.0,
-    "oldPrice": 14.99,
-    "badge": "choice"
+    "price": 850000,
+    "oldPrice": 149900,
+    "badge": "Deal có giới hạn",
+    "discount": "50% off"
   },
   "7": {
     "id": 7,
@@ -113,8 +121,9 @@
     "brand": "Bonnie Garmus",
     "avgRating": 4,
     "ratings": 62749,
-    "price": 8.0,
-    "oldPrice": 16.99
+    "price": 820000,
+    "oldPrice": 169900,
+    "discount": "50% off"
   },
   "8": {
     "id": 8,
@@ -126,9 +135,10 @@
     "brand": "Storm Dunlop",
     "avgRating": 4,
     "ratings": 134,
-    "price": 4.79,
-    "oldPrice": 6.99,
-    "badge": "choice"
+    "price": 490000,
+    "oldPrice": 699000,
+    "badge": "choice",
+    "discount": "50% off"
   },
   "9": {
     "id": 9,
@@ -142,7 +152,8 @@
     "ratings": 17602,
     "price": 34.99,
     "oldPrice": 40.99,
-    "badge": "choice"
+    "badge": "choice",
+    "discount": "50% off"
   },
   "10": {
     "id": 10,
@@ -155,7 +166,8 @@
     "avgRating": 3,
     "ratings": 10,
     "price": 42.95,
-    "oldPrice": 45.0
+    "oldPrice": 45.0,
+    "discount": "50% off"
   },
   "11": {
     "id": 11,
@@ -169,7 +181,8 @@
     "ratings": 262,
     "price": 499.0,
     "oldPrice": 549.0,
-    "badge": "choice"
+    "badge": "choice",
+    "discount": "50% off"
   },
   "12": {
     "id": 12,
@@ -183,7 +196,8 @@
     "ratings": 6283,
     "price": 34.99,
     "oldPrice": 79.99,
-    "badge": "limited"
+    "badge": "limited",
+    "discount": "50% off"
   },
   "13": {
     "id": 13,
@@ -197,6 +211,7 @@
     "ratings": 1047,
     "price": 1039.0,
     "oldPrice": 1099.0,
-    "badge": "seller"
+    "badge": "seller",
+    "discount": "50% off"
   }
 }
