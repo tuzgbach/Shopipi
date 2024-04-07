@@ -10,6 +10,8 @@ import Carousel from "./Carousel/Carousel";
 import CarouselProuduct2 from "./Carousel/CarouselProuduct2";
 import Button from "./Button/Button";
 import Signin from "./Button/Signin";
+import ChatShop from "./Chat/ChatShop";
+import Top from "./Button/Top";
 
 const Homepage = () => {
   const [products, setProducts] = useState({
@@ -86,6 +88,8 @@ const Homepage = () => {
           <Signin />
         </Button>
       </div>
+      <Top />
+      <ChatShop />
       <Footer />
     </div>
   );

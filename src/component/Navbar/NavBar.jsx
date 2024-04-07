@@ -1,5 +1,7 @@
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import Search from "../Search/Search";
+import { MdOutlineCloudDownload } from "react-icons/md";
 
 const NavBar = () => {
   return (
@@ -15,12 +17,17 @@ const NavBar = () => {
             />
           </Link>
           <div className="pr-4 pl-4">
-            <div className="text-xs xl:text-sm">Deliver to</div>
-            <div className="text-sm xl:text-base font-bold">United Kingdom</div>
+            <div className="text-xs xl:text-sm flex gap-3">
+              <span className="mt-2"> Tải ứng dụng</span>
+              <MdOutlineCloudDownload size={35} />
+            </div>
+            <div className="text-sm xl:text-base font-bold">Việt Nam</div>
           </div>
         </div>
         {/* Middle */}
-
+        <div className="flex grow relative items-center">
+          <Search />
+        </div>
         {/* Right */}
         <div className="flex items-center m-4">
           <div className="pr-4 pl-4">
