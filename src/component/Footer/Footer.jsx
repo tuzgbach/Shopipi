@@ -1,6 +1,10 @@
 import React from "react";
 import "../Footer/footer.css";
 import Footer2 from "./Footer2";
+import { Link } from "react-router-dom";
+import { TbWorld } from "react-icons/tb";
+import { FaLandmarkFlag } from "react-icons/fa6";
+import { PiCurrencyDollarFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -58,6 +62,39 @@ const Footer = () => {
             <li>Let Us Help You</li>
           </ul>
         </div>
+      </div>
+      <div className="footer-bottoms">
+        <span>
+          <div className="mr-16 mt-1">
+            <Link to={"/"}>
+              <img
+                className="h-[25px] w-[80px]"
+                src={"../images/amazon.png"}
+                alt="Amazon logo"
+              />
+            </Link>
+          </div>
+        </span>
+        <span className="flex gap-4 cursor-pointer text-gray-700">
+          <div className="border border-gray-300 rounded-md p-2 transition-colors duration-200">
+            <a className="flex gap-2 items-center">
+              <TbWorld className="text-blue-500" />
+              <span>Ngôn ngữ</span>
+            </a>
+          </div>
+          <div className="border border-gray-300 rounded-md p-2 transition-colors duration-200">
+            <a className="flex gap-2 items-center">
+              <PiCurrencyDollarFill className="text-blue-500" />
+              <span>VND: Việt nam đồng</span>
+            </a>
+          </div>
+          <div className="border border-gray-300 rounded-md p-2 transition-colors duration-200">
+            <a className="flex gap-2 items-center">
+              <FaLandmarkFlag className="text-red-500" />
+              <span>Việt Nam</span>
+            </a>
+          </div>
+        </span>
       </div>
       <div className="mt-3 bg-black p-[5rem]">
         <Footer2 />

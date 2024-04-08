@@ -70,6 +70,27 @@
   color: #ffffff; /* Change color on hover */
 }
 
+/* bottoms */
+.footer-bottoms {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  padding: 1rem 2rem;
+  border-top: 1px solid #404040;
+  color: #b3b3b3;
+  font-size: 0.875rem;
+}
+
+.footer-bottoms a {
+  color: #b3b3b3;
+  text-decoration: none;
+  margin: 0 0.5rem; /* Add some spacing between links */
+}
+
+.footer-bottoms a:hover {
+  color: #ffffff; /* Change color on hover */
+}
+
 /* footer2 */
 .footer-content2 {
   display: flex;
