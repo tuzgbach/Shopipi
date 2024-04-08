@@ -24,7 +24,7 @@ const HomepageCardTwo = ({ link }) => {
           className=" mb-1 xl:mb-10 relative overflow-hidden"
           style={{ margin: "1rem" }}
         >
-          <div className="text-sm xl:text-sm font-light inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
+          <div className="text-xs xl:text-sm font-light inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
             {product.title}
           </div>
           <img

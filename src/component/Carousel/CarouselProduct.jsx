@@ -32,16 +32,22 @@ const CarouselProduct = () => {
           <SwiperSlide key={product.id}>
             <Link
               to={`/product/${product.id}`}
-              className="flex flex-col items-center text-sm font-normal p-1.5"
+              className="flex flex-col items-start text-sm font-normal p-1.5"
             >
               <img
                 className="object-cover w-full h-80 rounded-lg"
                 src={product.image}
                 alt="HomeCard"
               />
-              <div className="mt-2 flex justify-center items-center w-full mb-5">
+              <div className="mt-2 flex justify-center items-center w-full mb-2">
                 <span className="inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
                   {product.title}
+                </span>
+              </div>
+              <div className="flex gap-2">
+                <span className="">{product.price.toLocaleString()} đ</span>
+                <span className="line-through">
+                  {product.oldPrice.toLocaleString()} đ
                 </span>
               </div>
             </Link>
