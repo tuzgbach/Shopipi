@@ -90,7 +90,6 @@ const Homepage = () => {
       </div>
       <Top />
       <ChatShop />
-      <Footer />
     </div>
   );
 };

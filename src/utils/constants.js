@@ -1,5 +1,6 @@
 export const BASE_URL = "..";
-export const GB_CURRENCY = Intl.NumberFormat("en-GB", {
+
+export const VN_CURRENCY = Intl.NumberFormat("en", {
   style: "currency",
-  currency: "GBP",
+  currency: "VND",
 });

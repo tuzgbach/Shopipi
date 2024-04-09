@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 
 import { callAPI } from "../../utils/callAPI";
-import { GB_CURRENCY } from "../../utils/constants";
+import { VN_CURRENCY } from "../../utils/constants";
 import { addToCart } from "../../redux/cartSlice";
 import ProductDetails from "./ProductDetails";
+import CarouselProuduct2 from "../Carousel/CarouselProuduct2";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -32,15 +33,15 @@ const ProductPage = () => {
 
   return (
     product && (
-      <div className="h-screen bg-amazonclone-background">
-        <div className="min-w-[1000px] max-w-[1500px] m-auto p-4">
-          <div className="grid grid-cols-10 gap-2">
+      <div className="bg-shopipi-background">
+        <div className="min-w-[1000px] max-w-[1500px] m-5 p-5">
+          <div className="grid grid-flow-col">
             {/* Left */}
-            <div className="col-span-3 p-8 rounded bg-white m-auto">
+            <div className="col-span-3 p-8 bg-white m-1">
               <img src={`${product.image}`} alt="Main product" />
             </div>
             {/* Middle */}
-            <div className="col-span-5 p-4 rounded bg-white divide-y divide-gray-400">
+            <div className="col-span-5 p-4 bg-white divide-y divide-gray-400 m-1">
               <div className="mb-3">
                 <ProductDetails product={product} ratings={true} />
               </div>
@@ -49,45 +50,49 @@ const ProductPage = () => {
               </div>
             </div>
             {/* Right */}
-            <div className="col-span-2 p-4 rounded bg-white">
-              <div className="text-xl xl:text-2xl text-red-700 text-right font-semibold">
-                {GB_CURRENCY.format(product.price)}
+            <div className="col-span-2 p-4 bg-white m-1">
+              <div className="text-xl xl:text-2xl text-red-700 font-semibold mt-[2rem]">
+                {VN_CURRENCY.format(product.price)}
               </div>
-              <div className="text-base xl:text-lg text-gray-500 text-right font-semibold">
-                RRP:{" "}
+              <div className="text-base xl:text-lg text-gray-500 font-semibold">
                 <span className="line-through">
-                  {GB_CURRENCY.format(product.oldPrice)}
+                  {VN_CURRENCY.format(product.oldPrice)}
                 </span>
               </div>
-              <div className="text-sm xl:text-base text-blue-500 font-semibold mt-3">
-                FREE Returns
+              <div className="text-sm xl:text-base text-blue-500 font-semibold mt-[3rem]">
+                Miễn đổi trả
               </div>
               <div className="text-sm xl:text-base text-blue-500 font-semibold mt-1">
-                FREE Delivery
+                Không giao hàng
               </div>
               <div className="text-base xl:text-lg text-green-700 font-semibold mt-1">
-                In Stock
+                Không khuyến mãi
               </div>
               <div className="text-base xl:text-lg mt-1">
-                Quantity:
+                <span className="mr-5">
+                  <a className="font-medium"> Số lượng:</a>
+                </span>
                 <select
                   onChange={(e) => setQuantity(e.target.value)}
-                  className="p-2 bg-white border rounded-md focus:border-indigo-600"
+                  className="p-2 w-[8rem] bg-white border rounded-md focus:border-indigo-600"
                 >
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
+                  {[...Array(5)].map((_, i) => (
+                    <option key={i + 1}>{i + 1}</option>
+                  ))}
                 </select>
               </div>
               <Link to={"/checkout"}>
                 <button
                   onClick={() => dispatch(addToCart(addQuantityToProduct()))}
-                  className="btn"
+                  className="button"
                 >
-                  Add to Cart
+                  Thêm giỏ hàng
                 </button>
               </Link>
             </div>
+          </div>
+          <div className="">
+            <CarouselProuduct2 />
           </div>
         </div>
       </div>
