@@ -18,14 +18,10 @@ const HomePageCardOne = ({ link }) => {
   }, [limit]);
 
   return (
-    <div className="h-[440px] bg-white m-3 z-30 grid grid-cols-2 grid-rows-2 rounded-lg">
+    <div className="bg-white m-3 z-30 grid grid-cols-1 sm:grid-cols-2 grid-rows-2 sm:grid-rows-1 rounded-lg">
       {products.map((product, index) => (
-        <div
-          key={index}
-          className="mb-6 xl:mb-10 relative overflow-hidden"
-          style={{ margin: "1rem" }}
-        >
-          <div className="text-sm xl:text-sm font-light mb-1 inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
+        <div key={index} className="mb-6 xl:mb-10 relative overflow-hidden p-4">
+          <div className="text-xs sm:text-sm font-light mb-1 inline-block min-w-0 overflow-hidden overflow-ellipsis whitespace-nowrap">
             {product.title}
           </div>
           <img

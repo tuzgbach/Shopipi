@@ -18,10 +18,10 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className="min-w-[1000px] bg-black">
-      <div className="flex bg-amazonclone text-white h-[60px]">
+    <header className="bg-black">
+      <div className="flex bg-amazonclone text-white h-[60px] px-2 md:px-4">
         {/* Left */}
-        <div className="flex items-center m-4">
+        <div className="flex items-center">
           <Link to={"/"}>
             <img
               className="h-[35px] w-[100px] m-2"
@@ -29,7 +29,7 @@ const NavBar = () => {
               alt="Amazon logo"
             />
           </Link>
-          <div className="pr-4 pl-4">
+          <div className="hidden lg:flex lg:pr-4 lg:pl-4">
             <div className="text-xs xl:text-sm flex gap-3">
               <span className="mt-2"> Tải ứng dụng</span>
               <MdOutlineCloudDownload size={35} />
@@ -42,7 +42,7 @@ const NavBar = () => {
           <Search />
         </div>
         {/* Right */}
-        <div className="flex items-center m-4">
+        <div className="flex items-center">
           <div className="pr-4 pl-4">
             <div className="text-sm">Hello, đăng nhập</div>
             <div className="text-sm font-bold">Tài khoản & Lựa chọn</div>
@@ -62,7 +62,7 @@ const NavBar = () => {
           </Link>
         </div>
       </div>
-      <div className="flex bg-amazonclone-light_blue text-white space-x-3 text-xs xl:text-sm p-2 pl-6 cursor-pointer">
+      <div className="flex bg-amazonclone-light_blue text-white space-x-3 text-xs xl:text-sm p-2 pl-6 cursor-pointer overflow-x-auto">
         {categories.map((category) => (
           <div key={category.id}>{category.name}</div>
         ))}

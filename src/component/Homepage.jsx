@@ -42,9 +42,9 @@ const Homepage = () => {
 
   return (
     <div className="bg-shopipi-background">
-      <div className="min-[1000px] max-[1500px] mr-[6rem] ml-[6rem]">
+      <div className="w-full sm:min-w-[500px] md:min-w-[750px] lg:min-w-[1000px] xl:max-w-[1500px] mx-2 sm:mx-[6rem]">
         <Carousel />
-        <div className="grid grid-cols-3 xl:grid-cols-4 -mt-80 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 -mt-80 ">
           {products.products1.map((product) =>
             renderProductCard(product, HomePageCardOne)
           )}
@@ -58,7 +58,7 @@ const Homepage = () => {
             renderProductCard(product, HomePageCardOne)
           )}
         </div>
-        <div className="grid grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {products.products2.map((product) =>
             renderProductCard(product, HomepageCardTwo)
           )}
@@ -72,7 +72,7 @@ const Homepage = () => {
         <CarouselProduct />
         <CarouselProuduct2 />
         <CarouselCategory />
-        <div className="grid grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {products.products2.map((product) =>
             renderProductCard(product, HomepageCardTwo)
           )}
