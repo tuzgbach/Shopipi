@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        "1sm": "13px",
+        "1sm": "12px",
       },
       colors: {
         shopipi: {

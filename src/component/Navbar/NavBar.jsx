@@ -18,51 +18,59 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className="bg-black">
-      <div className="flex bg-amazonclone text-white h-[60px] px-2 md:px-4">
+    <header className="w-full bg-black">
+      <div className="flex flex-col md:flex-row flex-wrap justify-between bg-amazonclone text-white h-[60px] px-5">
         {/* Left */}
-        <div className="flex items-center">
-          <Link to={"/"}>
+        <div className="flex items-center space-x-4 md:space-x-0 md:mx-4">
+          <Link to={"/"} className="focus:outline-white">
             <img
-              className="h-[35px] w-[100px] m-2"
+              className="h-[35px] w-[100px]"
               src={"../images/amazon.png"}
               alt="Amazon logo"
             />
           </Link>
-          <div className="hidden lg:flex lg:pr-4 lg:pl-4">
-            <div className="text-xs xl:text-sm flex gap-3">
-              <span className="mt-2"> Tải ứng dụng</span>
-              <MdOutlineCloudDownload size={35} />
+          <div className="hidden md:flex md:items-start mb-2">
+            <span className="ml-8 mt-4">
+              <MdOutlineCloudDownload size={25} />
+            </span>
+            <div className="text-1sm">
+              <span className="mt-1 flex ml-3">Tải ứng dụng</span>
+              <div className="text-1sm font-bold ml-3">Việt Nam</div>
             </div>
-            <div className="text-sm xl:text-base font-bold">Việt Nam</div>
           </div>
         </div>
         {/* Middle */}
-        <div className="flex grow relative items-center">
+        <div className="flex-1 md:flex-none md:w-1/2 md:mt-0 m-3">
           <Search />
         </div>
         {/* Right */}
-        <div className="flex items-center">
-          <div className="pr-4 pl-4">
-            <div className="text-sm">Hello, đăng nhập</div>
-            <div className="text-sm font-bold">Tài khoản & Lựa chọn</div>
+        <div className="flex flex-col-3 md:flex-row items-center space-x-4 md:space-x-0 md:mx-1 mt-2 md:mt-0">
+          <div className="hidden md:flex md:flex-col md:items-start md:space-y-1 mr-[2rem] hover:border hover:border-white focus:border-white">
+            <div className="text-1sm">Hello, đăng nhập</div>
+            <div className="text-1sm font-bold">Tài khoản & Lựa chọn</div>
           </div>
-          <div className="pr-4 pl-4">
-            <div className="text-xs xl:text-sm">Kho bãi</div>
-            <div className="text-sm font-bold">& Giỏ hàng</div>
+          <div className="hidden md:flex md:flex-col md:items-start md:space-y-1 mr-[2rem] hover:border hover:border-white focus:border-white">
+            <div className="text-1sm">Giỏ hàng</div>
+            <div className="text-1sm font-bold">& Thanh toán</div>
           </div>
-          <Link to={"/checkout"}>
-            <div className="flex pr-3 pl-3">
-              <ShoppingCartIcon className="size-10" />
-              <div className="relative">
-                <div className="absolute right-[9px] font-bold m-2 text-orange-400"></div>
+          <div className="mr-[1rem]">
+            <Link to={"/checkout"}>
+              <div className="flex items-center mr-3 ml-4 m-1 hover:border hover:border-white">
+                <ShoppingCartIcon className="size-10" />
+                <div className="relative mb-[3rem]">
+                  <div className="absolute right-[12px] font-bold mt-2 text-orange-400">
+                    1
+                  </div>
+                </div>
+                <div className="mt-5 text-1sm font-bold hover:text-white">
+                  Cart
+                </div>
               </div>
-              <div className="mt-5 text-sm font-bold">Cart</div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="flex bg-amazonclone-light_blue text-white space-x-3 text-xs xl:text-sm p-2 pl-6 cursor-pointer overflow-x-auto">
+      <div className="flex flex-wrap w-full mt-1 bg-slate-900 text-white space-x-3 text-xs xl:text-sm p-1 pl-6 cursor-pointer">
         {categories.map((category) => (
           <div key={category.id}>{category.name}</div>
         ))}

@@ -34,14 +34,14 @@ const ProductPage = () => {
   return (
     product && (
       <div className="bg-shopipi-background">
-        <div className="min-w-[1000px] max-w-[1500px] m-5 p-5">
-          <div className="grid grid-flow-col">
+        <div className="m-5 p-5 md:min-w-[1000px] lg:max-w-[1500px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-flow-col gap-4">
             {/* Left */}
-            <div className="col-span-3 p-8 bg-white m-1">
+            <div className="p-8 bg-white m-1">
               <img src={`${product.image}`} alt="Main product" />
             </div>
             {/* Middle */}
-            <div className="col-span-5 p-4 bg-white divide-y divide-gray-400 m-1">
+            <div className="p-4 bg-white divide-y divide-gray-400 m-1">
               <div className="mb-3">
                 <ProductDetails product={product} ratings={true} />
               </div>
@@ -50,7 +50,7 @@ const ProductPage = () => {
               </div>
             </div>
             {/* Right */}
-            <div className="col-span-2 p-4 bg-white m-1">
+            <div className="p-4 bg-white m-1">
               <div className="text-xl xl:text-2xl text-red-700 font-semibold mt-[2rem]">
                 {VN_CURRENCY.format(product.price)}
               </div>
@@ -91,9 +91,7 @@ const ProductPage = () => {
               </Link>
             </div>
           </div>
-          <div className="">
-            <CarouselProuduct2 />
-          </div>
+          <CarouselProuduct2 />
         </div>
       </div>
     )
