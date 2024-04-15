@@ -5,6 +5,11 @@ module.exports = {
     extend: {
       fontSize: {
         "1sm": "12px",
+        "2sm": "14px",
+        "3sm": "15px",
+        "4sm": "16px",
+        "5sm": "17px",
+        "6sm": "18px",
       },
       colors: {
         shopipi: {
@@ -16,5 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-multi-column")()],
 };

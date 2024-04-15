@@ -7,9 +7,9 @@ import Attribute from "./Attribute";
 const ProductDetails = ({ product, ratings }) => {
   return (
     <div className="mb-1">
-      <div className="text-xl xl:text-2xl font-medium mb-1 flex gap-5">
+      <div className="text-xl xl:text-2xl font-medium mb-1 flex gap-5 items-baseline">
         {product.title}
-        <div className="hover:bg-slate-500 cursor-pointer">
+        <div className="hover:bg-gray-200 p-1 rounded-full cursor-pointer transition-colors duration-200">
           <FaChevronCircleDown style={{ fontSize: "1.5rem" }} />
         </div>
       </div>

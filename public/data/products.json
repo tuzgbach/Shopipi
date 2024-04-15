@@ -1,9 +1,10 @@
-{
-  "0": {
+[
+  {
     "id": 0,
     "title": "Chuối Phủ Chocolate - Đặc Sản Ngon Lành",
     "image": "../images/product_0.jpg",
     "image_small": "../images/product_0_small.jpg",
+    "image_brand": "https://m.media-amazon.com/images/S/amzn-author-media-prod/badq8cb92pevvneqrhinri9oig._SY600_.jpg",
     "attribute": "Paperback",
     "description": "The gripping new Jack Reacher thriller from the No.1 bestselling authors Lee Child and Andrew Child.",
     "brand": "Lee Child",
@@ -13,13 +14,17 @@
     "oldPrice": 200000,
     "link": "shop now",
     "badge": "Deal có giới hạn",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "011010",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "1": {
+  {
     "id": 1,
     "title": "Mít Ruột Đỏ Indo Thơm, Ngọt (Tách Múi) - Foodmap Fruits",
     "image": "../images/product_6.jpg",
     "image_small": "../images/product_1_small.jpg",
+    "image_brand": "https://m.media-amazon.com/images/S/amzn-author-media-prod/badq8cb92pevvneqrhinri9oig._SY600_.jpg",
     "attribute": "Hardcover",
     "brand": "Guinness World Records",
     "description": "The 2023 edition takes readers on a journey that's out of this world! ",
@@ -30,32 +35,41 @@
     "quantity": 0,
     "link": "shop now",
     "badge": "Deal có giới hạn",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "G100010009435",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "2": {
+  {
     "id": 2,
     "title": "Dừa Sọ Tươi Ngon - Size M (350 - 450 gr) - Trái - FOODMAP Fruits",
     "image": "../images/product_5.jpg",
     "image_small": "../images/product_2_small.jpg",
-    "attribute": {
-      "quantity": 10000,
-      "size": "M",
-      "color": "xanh",
-      "mar": "cotton",
-      "brand": "con cưng"
-    },
+    "image_brand": "https://m.media-amazon.com/images/S/amzn-author-media-prod/badq8cb92pevvneqrhinri9oig._SY600_.jpg",
+    "attribute": [
+      {
+        "quantity": 10000,
+        "size": "M",
+        "color": "xanh",
+        "mar": "cotton",
+        "brand": "con cưng"
+      }
+    ],
     "type": "CLOTHING",
     "brand": "Jamie Oliver",
-    "description": "Give them the simplest cookbook ever this Christmas . . . Jamie's back to basics with over 120 simple, delicious, ONE pan recipes",
+    "description": "Give them the simplest cookbook ever this Christmas . . . Jamie's back to basics with over 120 simple, delicious, ONE pan recipes, Give them the simplest cookbook ever this Christmas . . . Jamie's back to basics with over 120 simple, delicious, ONE pan recipes,Give them the simplest cookbook ever this Christmas . . . Jamie's back to basics with over 120 simple, delicious, ONE pan recipes,",
     "avgRating": 4,
     "ratings": 2993,
     "price": 130000,
     "oldPrice": 230000,
     "link": "shop now",
     "badge": "Deal có giới hạn",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "G100010009435",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "3": {
+  {
     "id": 3,
     "title": "Dừa Sọ Tươi Ngon - Size M (350 - 450 gr) - Trái - FOODMAP Fruits",
     "image": "../images/product_5.jpg",
@@ -76,9 +90,12 @@
     "oldPrice": 230000,
     "link": "shop now",
     "badge": "Deal có giới hạn",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "011010",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "4": {
+  {
     "id": 4,
     "title": "Dừa Sọ Tươi Ngon - Size L (450gr UP) - Trái - FOODMAP Fruits",
     "image": "../images/product_3.jpg",
@@ -92,9 +109,12 @@
     "link": "shop now",
     "oldPrice": 200000,
     "badge": "Deal có giới hạn",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "011010",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "5": {
+  {
     "id": 5,
     "title": "Táo Xanh Mỹ - Foodmap Fruits",
     "image": "../images/product_4.jpg",
@@ -108,9 +128,12 @@
     "oldPrice": 139900,
     "link": "shop now",
     "badge": "Deal có giới hạn",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "011010",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "6": {
+  {
     "id": 6,
     "title": "[MUA 2 TẶNG 1] Đường Thốt Nốt Truyền Thống An Giang Nguyên Chất 100% - Đặc Sản Ngon Lành",
     "image": "../images/product_5.jpg",
@@ -124,9 +147,12 @@
     "link": "shop now",
     "oldPrice": 149900,
     "badge": "Deal có giới hạn",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "011010",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "7": {
+  {
     "id": 7,
     "title": "Đường Dừa Nước - VIETNIPA",
     "image": "../images/product_6.jpg",
@@ -139,9 +165,12 @@
     "price": 850000,
     "oldPrice": 149900,
     "badge": "Deal có giới hạn",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "011010",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "8": {
+  {
     "id": 8,
     "title": "Lessons",
     "image": "../images/product_7.jpg",
@@ -153,9 +182,12 @@
     "ratings": 62749,
     "price": 820000,
     "oldPrice": 169900,
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "011010",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "9": {
+  {
     "id": 9,
     "title": "2023 Guide to the Night Sky",
     "image": "../images/product_8.jpg",
@@ -168,9 +200,12 @@
     "price": 490000,
     "oldPrice": 699000,
     "badge": "choice",
-    "discount": "50% off"
+    "discount": "50% off",
+    "groupCode": "011010",
+    "productCode": "01",
+    "certificates": "ATTP TPHCM"
   },
-  "10": {
+  {
     "id": 10,
     "title": "Fire TV Stick Lite",
     "image": "../images/product_9.jpg",
@@ -185,7 +220,7 @@
     "badge": "choice",
     "discount": "50% off"
   },
-  "11": {
+  {
     "id": 11,
     "title": "BOSS Men's Prime Shirt",
     "image": "../images/product_10.jpg",
@@ -199,7 +234,7 @@
     "oldPrice": 45.0,
     "discount": "50% off"
   },
-  "12": {
+  {
     "id": 12,
     "title": "Apple 2022 10.9-inch iPad",
     "image": "../images/product_11.jpg",
@@ -214,7 +249,7 @@
     "badge": "choice",
     "discount": "50% off"
   },
-  "13": {
+  {
     "id": 13,
     "title": "DeLonghi Nescafé Dolce Coffee Machine",
     "image": "../images/product_12.jpg",
@@ -229,7 +264,7 @@
     "badge": "limited",
     "discount": "50% off"
   },
-  "14": {
+  {
     "id": 14,
     "title": "Apple iPhone 14 Pro - Deep Purple",
     "image": "../images/product_13.jpg",
@@ -244,4 +279,4 @@
     "badge": "seller",
     "discount": "50% off"
   }
-}
+]
