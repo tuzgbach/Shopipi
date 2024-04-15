@@ -27,7 +27,7 @@ const OrderNav = () => {
   }, []);
 
   return (
-    <div className="mb-4 p-4 bg-white shadow rounded-lg">
+    <div className="mb-4 p-4 bg-white shadow rounded-lg sticky top-0">
       <div className="text-xs sm:text-sm font-light mb-2">
         <span className="text-gray-600">Giỏ hàng của bạn</span>
         <div className="flex flex-col items-start mt-2">
