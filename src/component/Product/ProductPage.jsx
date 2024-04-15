@@ -8,6 +8,7 @@ import { addToCart } from "../../redux/cartSlice";
 import ProductDetails from "./ProductDetails";
 import CarouselProuduct2 from "../Carousel/CarouselProuduct2";
 import BrandDetails from "../Brand/BrandDetails";
+import OrderNav from "../Order/OrderNav";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -50,7 +51,7 @@ const ProductPage = () => {
 
   return (
     product && (
-      <div className="bg-shopipi-background m-1">
+      <div className="bg-shopipi-background m-1 flex">
         <div className="m-5 p-5 md:min-w-[1000px] lg:max-w-[1490px]">
           <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-flow-col ml-3">
             {/* Image product */}
@@ -167,6 +168,10 @@ const ProductPage = () => {
             </div>
           </div>
           <CarouselProuduct2 />
+        </div>
+        {/* NavOrder */}
+        <div className="bg-white w-[50%]">
+          <OrderNav />
         </div>
       </div>
     )
